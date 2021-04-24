@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/650746482168823868/835548920980963419/house.png">
+        <title> Kúró-Kéró </title>
+        <style>
+        
+            body {background-color: rgb(255, 255, 255);}
+            h1 {color: rgb(0, 0, 0); font-family: monospace; text-align: center; font-size: 35px;}
+            table {color: rgb(255, 0, 72); font-family: monospace; text-align: center; font-size: 35px;}
+            p {color: rgb(0, 0, 0); font-family: monospace; text-align: center; font-size: 15px;}
+            .cent {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .click {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+                cursor: pointer;
+            }
+
+            .tc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        </head>
+    <body background="https://cdn.discordapp.com/attachments/650746482168823868/835552683355275334/bg.png">
+        
+        <img src="https://cdn.discordapp.com/attachments/493069424899915786/835522326573088788/kero_thumbnail.png" class="cent">
+        <br>
+        <table class="tc">
+            <tr>
+                <th> Kényelmes és tágas ;) </th>
+                <th> <img src="https://cdn.discordapp.com/attachments/650746482168823868/835529283899621376/comf.png" class="cent"></th>
+            </tr>
+            <tr>
+                <th> Távol a külvilágtól</th>
+                <th> <img src="https://cdn.discordapp.com/attachments/650746482168823868/835542038648848434/coup.png" class="cent"></th>
+            </tr>
+            <tr>
+                <th> Olcsón bérelhető </th>
+                <th> <img src="https://cdn.discordapp.com/attachments/650746482168823868/835530236266283058/money.png" class="cent"> </th>
+            </tr>
+        </table>
+        <br>
+        <img src="https://cdn.discordapp.com/attachments/650746482168823868/835539005486792735/katt.png" class="click" onclick="buy()">
+   
+
+        <audio autoplay loop id="play">
+            <source src="this.ogg" type="audio/ogg">
+        </audio>
+
+        <script>
+            var audio = document.getElementById("play");
+            audio.volume = 0.5;
+
+            function buy() {
+                window.location.href = 'transaction.html';
+            }
+        </script>
+
+     </body>
+    
+</html>

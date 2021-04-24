@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/650746482168823868/835548920980963419/house.png">
+        <title> Kúró-Kéró </title>
+        <style>
+        
+            body {background-color: rgb(255, 255, 255);}
+            h1 {color: rgb(255, 0, 72); font-family: monospace; text-align: center; font-size: 35px;}   
+            p {color: rgb(255, 0, 72); font-family: monospace; text-align: center; font-size: 30px; font-weight: bold;}
+        
+
+            .click {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                cursor: pointer;
+            }
+
+            .js {
+                font-size: 50px;
+            }
+
+        </style>
+        </head>
+    <body background="https://cdn.discordapp.com/attachments/650746482168823868/835552683355275334/bg.png">
+        
+        <img src="https://cdn.discordapp.com/attachments/493069424899915786/835522326573088788/kero_thumbnail.png" class="click" onclick="back()">
+        <br>
+        <h1> Köszönjük a vásárlást!</h1>
+        <p> A Kúró-Kéróra az alábbi teljes napra kapott szállást: </p>
+        <p class="js" id="gen"> </p>
+        <audio autoplay loop id="play">
+            <source src="this.ogg" type="audio/ogg">
+        </audio>
+
+        <script>
+            var audio = document.getElementById("play");
+            audio.volume = 0.5;
+
+            function back() {
+                window.location.href = 'index.html';
+            }
+
+            let num = "2021."
+            let r1 = Math.floor(Math.random() * 12) + 1;
+            let r2 = Math.floor(Math.random() * 30) + 1;
+            let date = num + r1 + "." + r2 + "."
+            document.getElementById("gen").innerHTML = date;
+        </script>
+
+     </body>
+    
+</html>
